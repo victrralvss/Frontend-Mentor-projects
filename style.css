@@ -1,9 +1,4 @@
 /*CONFIGURAÇÕES GERAIS*/
-
-@font-face {
-        font-family: 'Inter';
-        src: url(./assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
-}
     
 *{
     margin: 0;
@@ -23,7 +18,7 @@ body{
 /*ESTILZIANDO O BODY*/
 
 .page{
-    padding: 50px 100px;
+    padding: 20px 100px;
     gap: 30px;
     display: grid;
     grid-template-areas: 
@@ -178,21 +173,24 @@ aside h2{
 footer{
     margin-top: 30px;
     grid-area: footer;
-    justify-content: space-between;
+    
 }
 
 .footer-holder{
     display: flex;
     gap: 10px;
     justify-content: center;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
 }
 
-.thumbnail{ 
-    width: 100%;
+.thumbnail{
+    width: 250px;
     height: auto;
     background-position: bottom;
     background-size: cover;
     background-repeat: no-repeat;
+    border-radius: 10px;
 }
 
 
@@ -200,6 +198,7 @@ footer{
     display: flex;
     width: 33%;
     gap: 10px;
+    scroll-snap-align: start; 
 }
 
 .top-content h3{
@@ -216,6 +215,9 @@ footer{
 
 .about {
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .nav-area ul li a:hover{
