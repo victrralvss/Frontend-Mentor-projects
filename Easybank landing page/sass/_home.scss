@@ -53,6 +53,8 @@ main{
     
             .easybank-ad{
                 width: 50rem;
+                display: flex;
+                flex-direction: column;
     
                 h1{
                     line-height: 6rem;
@@ -80,6 +82,7 @@ main{
             .container{
                 .easybank-ad{
                     width: 40rem;
+
     
                     p{
                         font-size: 1.3rem;
@@ -104,10 +107,7 @@ main{
                     margin-top: 10rem;
                     width: 70rem;
                     text-align: center;
-
-                    .send{
-                        margin: 0 auto;
-                    }
+                    align-items: center;
                 }
             }
 
@@ -116,7 +116,7 @@ main{
                 display: flex;
             }
         }
-    
+        
     }
     
     .features{
