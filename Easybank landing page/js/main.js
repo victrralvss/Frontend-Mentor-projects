@@ -4,21 +4,14 @@ const overlay = document.querySelector("#overlay")
 
 //
 
-menuToggle.addEventListener('click', toggleMobileMenu);
-
-
-
-if ("visible" in menuNav.classList){
-    console.log()
-}
-
-console.log(menuNav.classList)
-
 function toggleMobileMenu(){
-    
     menuNav.classList.toggle("visible");
     overlay.classList.toggle("visible");
     menuToggle.classList.toggle("close");
 }
 
-console.log()
+menuToggle.addEventListener('click', toggleMobileMenu);
+overlay.addEventListener('click', toggleMobileMenu);
+console.log(menuNav.classList)
+
+
