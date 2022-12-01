@@ -1,0 +1,100 @@
+footer{
+    background-color: #2d314e;
+
+    .container{
+        display: flex;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        border: 2px solid red;
+        justify-content: space-between;
+
+        .ft-left{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
+            width: 100%;
+            
+            ul{
+                display: flex;
+                gap: 1rem;
+                
+                img{
+                    width: 1.5rem;
+                }
+            }
+
+
+        }
+
+        .ft-mid{
+            display: flex;
+            justify-content: flex-start;
+            gap: 5rem;
+            width: 100%;
+
+            ul{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                li{
+                    a{
+                        font-size: 1.3rem;
+                        transition: all .3s ease;
+
+                        &:hover{
+                            color: #2ec29c;
+                        }
+                    }
+                }
+            }
+            
+        }
+
+        .ft-right{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 2.5rem;
+            width: 100%;
+
+            span{
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    @media(max-width: 800px){
+
+        .container{
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            flex-direction: column;
+            justify-content: center;
+            gap: 3rem;
+            
+
+            .ft-mid, .ft-right{
+                align-items: center;
+                padding: 1rem;
+            }
+
+            .ft-left{
+                gap: 2.5rem;
+                justify-content: center;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .ft-mid{
+                justify-content: center;
+                text-align: center;
+                ul{
+                    gap: 1.5rem;
+                }
+            }
+        }
+        
+    }
+}
