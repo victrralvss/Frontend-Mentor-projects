@@ -1,11 +1,14 @@
+
 .send {
     background: linear-gradient(90deg, rgba(50,210,112,1) 0%, rgba(45,183,206,1) 100%);
-    padding: 1rem 3.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 5rem;
     transition: all .3s ease;
     align-items: center;
-    justify-content: center;
-
+    height: 4rem;
+    width: 16rem;
 
     span{
         color: white;
