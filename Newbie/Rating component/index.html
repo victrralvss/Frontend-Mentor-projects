@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="scss/css/main.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  
+  <title>Interactive rating component</title>
+
+</head>
+
+<body>
+
+
+  <main>
+  
+      <div class="rating-card">
+
+
+        <div class="display-rating" id="submit-rate">
+          <div class="star-container"></div>
+
+          <div class="rating-text">
+            <h2>How did we do?</h1>
+            <p>Please let us know how we did with your support request. All feedback is appreciated 
+            to help us improve our offering!</p>
+          </div>    
+
+          <form onsubmit="runCode(event)" name="rating-values-container" id="rating-form">
+
+            <fieldset name="rate-container">
+              <legend>Rating values</legend>
+
+              <input type="radio" id="rate-1" name="rating" value="1">
+              <label for="rate-1" id="choice-1"></label>
+
+              <input type="radio" id="rate-2" name="rating" value="2" conta>
+              <label for="rate-2" id="choice-2"></label>
+
+              <input type="radio" id="rate-3" name="rating" value="3">
+              <label for="rate-3" id="choice-3"></label>
+
+              <input type="radio" id="rate-4" name="rating" value="4">
+              <label for="rate-4" id="choice-4"></label>
+              
+              <input type="radio" id="rate-5" name="rating" value="5">
+              <label for="rate-5" id="choice-5"></label>
+            </fieldset>
+
+    
+            <input type="submit" name="send-rating" value="SUBMIT">
+          </form>
+        </div>
+
+        <div class="final-rating" id="show-rate">
+
+          <img src="images/illustration-thank-you.svg" role="presentation">
+
+          <div class="rate-chosen">You selected <span id="users-rate"></span> out of 5</div>
+          
+          <div class="rating-text">
+            <h2>Thank you!</h2>
+            <p>We appreciate you taking the time to give a rating. If you ever need more support, 
+              don’t hesitate to get in touch!
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+  </main>
+
+  <!-- Rating state start -->
+  
+  <!-- Rating state end -->
+
+  <!-- Thank you state start -->
+ <!-- 
+  You selectedAdd rating here out of 5
+
+  Thank you!
+
+  We appreciate you taking the time to give a rating. If you ever need more support, 
+  don’t hesitate to get in touch!
+--> 
+  <!-- Thank you state end -->
+
+  <script src="js/main.js"></script>
+</body>
+</html>
