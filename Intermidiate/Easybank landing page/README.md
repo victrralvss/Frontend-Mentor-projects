@@ -28,8 +28,10 @@ Users should be able to:
 - See the "Thank you" card state after submitting a rating
 
 ### Screenshot
->Take a look! This is just the begining...
-1920x1080 PICTURE
+>Take a look! You can follow the links bellow for more details...
+
+![image](https://user-images.githubusercontent.com/90868283/214996183-104190b9-1351-4fba-b38f-faf9483ed25d.png)
+
 
 ### Links
 
