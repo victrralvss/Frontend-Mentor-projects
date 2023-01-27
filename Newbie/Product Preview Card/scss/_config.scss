@@ -1,0 +1,33 @@
+// COLORS
+$background-color: hsl(30, 38%, 92%) ;
+$primary-color: hsl(158, 36%, 37%);
+$active-button: hsl(156, 42%, 18%);
+$dark-text: hsl(212, 21%, 14%);
+$normal-text: hsl(228, 12%, 48%);
+$card-background: hsl(0, 0%, 100%);
+
+//FONTS
+$primary-font: 'Montserrat';
+$secondary-font: 'Fraunces';
+$font-weights: (
+  regular: 500,
+  bold: 700,
+);
+
+
+//FUNCTIONS
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name)
+}
+
+
+//MIXINS
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin ease-transition {
+  transition: all 0.5s ease-in-out;
+}

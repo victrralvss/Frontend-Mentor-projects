@@ -1,0 +1,28 @@
+
+main {
+
+  @media screen and (max-width : 950px) {
+    margin-top: 10rem;
+
+    .card {
+      max-width: 40rem;
+      flex-direction: column;
+      margin: 0 auto;
+
+      &__product-img {
+        width: 100%;
+        border-radius: 2rem 2rem 0 0;
+
+        img {
+          border-radius: 2rem 2rem 0 0;
+        }
+
+      }
+
+      &__product-info {
+          width: 100%;
+      }
+
+    }
+  }
+}
