@@ -36,6 +36,8 @@ Users should be able to:
 - Solution URL: [Solution page - Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-landingpage-semantic-html-sass-style-preprocessor-kLERAVnrUP)
 - Live Site URL: [Easy Bank](https://easybank-victrralvss.netlify.app)
 
+## My process
+
 ### Built with
 
 - Semantic HTML5 markup
