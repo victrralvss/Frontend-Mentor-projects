@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution page -Frontend Mentor](https://your-solution-url.com)
+- Solution URL: [Solution page - Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-landingpage-semantic-html-sass-style-preprocessor-kLERAVnrUP)
 - Live Site URL: [Easy Bank](https://easybank-victrralvss.netlify.app)
 
 ### Built with
