@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/responsive-design-sass-javascript-semantic-html-ylj4qSeMso)
-- Live Site URL: [Add live site URL here](https://ratingcard-victrralvss.netlify.app)
+- Solution URL: [Challenge sollutuion | Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-design-sass-javascript-semantic-html-ylj4qSeMso)
+- Live Site URL: [Site url](https://ratingcard-victrralvss.netlify.app)
 
 ## My process
 
