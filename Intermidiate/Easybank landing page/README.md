@@ -46,10 +46,16 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - SASS
+- JavaScript
 
 ### What I learned
 >I will share some toughts in skills and practices that I have improved while doing this challenge
 
+Being one of the first Intermidiate challenges I've had done, I could apply more concepts in depth, such as:
+
+Responsive Design | DOM manipulation | Menu navigations
+
+I've also improved my way of thinking about a site's structure and apply a good semantic HTML designed for all users.
 
 ### Useful resources
 >Here are described (if any) articles/websites/videos/docs that helped me through the challenge
