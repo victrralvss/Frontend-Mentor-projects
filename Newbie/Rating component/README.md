@@ -58,8 +58,7 @@ Users should be able to:
 
 
 ## Author 
->Follow me!!
- :)
+>Follow me!! :)
 - Linkedin  - [Victor Alves Alcantara](https://www.linkedin.com/in/victrralvss/)
 - Github - [Victor Alves](https://github.com/victrralvss)
 - Frontend Mentor - [@victrralvss](https://www.frontendmentor.io/profile/victrralvss)
