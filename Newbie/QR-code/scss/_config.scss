@@ -1,0 +1,29 @@
+//COLORS
+$primarycolor: hsl(216, 100%, 61%);
+$backgroundcolor: hsl(212, 45%, 89%);
+$textcolor: hsl(220, 15%, 55%);
+$titlecolor: hsl(218, 44%, 22%);
+$light: hsl(0, 0%, 100%);
+
+
+//FONTS
+$primaryfont: Outifit;
+$fontweights: (
+  regular: 400,
+  bold: 700,
+  extrabold: 800,
+);
+
+
+//MIXINS
+@mixin column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+//FUNCTIONS
+@function weight($weight) {
+  @return map-get($fontweights, $weight);
+}
