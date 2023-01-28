@@ -32,7 +32,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Solution page - Frontend Mentor]()
-- Live Site URL: [NFT card ]()
+- Live Site URL: [NFT card ](https://nft-card-victrralvss.netlify.app)
 
 ## My process
 
