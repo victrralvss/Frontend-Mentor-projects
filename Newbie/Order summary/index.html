@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
+    <meta name="author" content="Victor Alves"/>
+    <meta name="description" content="Frontend Mentor | QR code card component">
+    <meta name="keywords" content="oder, music plan, card, frontend-mentor">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="./scss/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Order summary card</title>
+
+</head>
+
+
+<body>
+
+<picture class="background-pattern">
+    <source srcset="./images/pattern-background-desktop.svg" media="(min-width: 950px)">
+    <source srcset="./images/pattern-background-mobile.svg">
+    <img draggable="false" src="images/pattern-background-desktop.svg.svg" role="none"/>
+</picture>
+
+<main>
+    <article class="card">
+        <div class="card__cover"></div>
+
+        <div class="details">
+            <h1 class="title">Order Summary</h1>
+            <p class="subtitle">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+
+
+            <div class="details__plan-info">
+
+                <div class="right">
+                    <div class="musical-note"></div>
+                    <div class="plan">
+                        <h2>Annual Plan</h2>
+                        <p>$59.99/year</p>
+                    </div>
+                </div>
+
+                <a href="#">Change</a>
+            </div><!-- CARD-PAYMENT -->
+
+            <div class="details__payment">
+                <button value="submit">Proceed to Payment</button>
+                <button value="submit">Cancel Order</button>
+            </div>
+        </div>
+    </article>
+
+</main>
+
+</body>
+</html>

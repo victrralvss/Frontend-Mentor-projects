@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: Outifit, sans-serif;
+  color: hsl(220deg, 15%, 55%);
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  background-color: hsl(212deg, 45%, 89%);
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.qrcode-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 25rem;
+  background-color: hsl(0deg, 0%, 100%);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.qrcode-card__picture {
+  height: 20%;
+}
+.qrcode-card__picture .code-img {
+  border-radius: 1rem;
+}
+.qrcode-card__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 0 0.5rem 3rem 0.5rem;
+}
+.qrcode-card__description h1 {
+  font-size: 1.5rem;
+  color: hsl(218deg, 44%, 22%);
+  font-weight: 800;
+  text-align: center;
+}
+.qrcode-card__description h2 {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*# sourceMappingURL=main.css.map */
