@@ -1,0 +1,33 @@
+@import 'config';
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: $primary-font, 'sans-serif';
+  color: $fontcolor;
+}
+
+button {
+  border: 0;
+  background-color: $primarycolor;
+  cursor: pointer;
+}
+
+
+html{
+  font-size: 62.5%; //This allows using rem as a base of 10 number -> 1rem = 10px
+  height: 100%;
+}
+
+
+body{
+  background-color: $backgroundcolor;
+  width: 100%;
+  height: 100%;
+}
+
+a{
+  text-decoration: none;
+}
