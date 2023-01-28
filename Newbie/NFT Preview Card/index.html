@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="author" content="Victor Alves"/>
+  <meta name="description" content="Frontend Mentor | Product preview card component single page layout">
+  <meta name="keywords" content="perfume, product, chanel">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./scss/main.css"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+  <title>NFT Preview Card</title>
+
+</head>
+<body>
+
+<main>
+
+  <article class="nft-card">
+
+    <picture class="nft-card__picture">
+      <source srcset="images/image-equilibrium.jpg">
+      <img src="images/image-equilibrium.jpg" alt="NFT card Equilibrium #3429" />
+
+      <div class="overlay">
+        <img src="./images/icon-view.svg" alt="See NFT"/>
+      </div>
+    </picture>
+
+
+
+    <h1 class="nft-card__title">Equilibrium #3429</h1>
+    <p class="nft-card__subtitle">Our Equilibrium collection promotes balance and calm.</p>
+
+    <div class="nft-card__info">
+      <div class="value"><img src="./images/icon-ethereum.svg"/><span>0.041 ETH</span></div>
+      <div class="time"><img src="./images/icon-clock.svg"/><span> 3 days left</span></div>
+    </div>
+
+    <div class="nft-card__creation">
+      <div class="creator"></div>
+      <span>Creation of <a class="creation__name" href="#">Jules Wyvern</a></span>
+    </div>
+
+  </article>
+
+</main>
+
+
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+</body>
+</html>

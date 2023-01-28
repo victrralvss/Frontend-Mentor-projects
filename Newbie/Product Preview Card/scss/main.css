@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Montserrat", "sans-serif";
+  color: hsl(212deg, 21%, 14%);
+}
+
+button {
+  border: 0;
+  background-color: hsl(158deg, 36%, 37%);
+  cursor: pointer;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  background-color: hsl(30deg, 38%, 92%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  padding: 3rem 1rem;
+}
+main .card {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 2rem;
+  display: flex;
+  width: 80rem;
+  height: 100%;
+}
+main .card__product-img {
+  border-radius: 2rem 0 0 2rem;
+  width: 50%;
+}
+main .card__product-img img {
+  border-radius: 2rem 0 0 2rem;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+main .card__product-info {
+  border-radius: 0 2rem 2rem 0;
+  height: 100%;
+  width: 50%;
+  padding: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: space-between;
+}
+main .card__product-info .subtitle {
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: hsl(228deg, 12%, 48%);
+}
+main .card__product-info h1 {
+  font-family: "Fraunces";
+  font-weight: 700;
+  font-size: 5rem;
+  line-height: 5.5rem;
+}
+main .card__product-info .description {
+  line-height: 2.5rem;
+  color: hsl(228deg, 12%, 48%);
+  font-size: 1.4rem;
+}
+main .card__product-info .price {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+main .card__product-info .price h2 {
+  font-family: "Fraunces";
+  color: hsl(158deg, 36%, 37%);
+  font-size: 4rem;
+  font-weight: 700;
+}
+main .card__product-info .price span {
+  font-size: 1.5rem;
+  color: hsl(228deg, 12%, 48%);
+  text-decoration: line-through;
+}
+main .card__product-info button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  min-height: 5rem;
+  border-radius: 0.5rem;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  font-size: 1.4rem;
+  transition: all 0.5s ease-in-out;
+}
+main .card__product-info button .icon {
+  color: hsl(0deg, 0%, 100%);
+}
+main .card__product-info button:hover {
+  background-color: hsl(156deg, 42%, 18%);
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+  bottom: 1rem;
+  font-size: 1rem;
+  color: hsl(212deg, 21%, 14%);
+  bottom: 1rem;
+}
+
+@media screen and (max-width: 950px) {
+  main {
+    margin-top: 10rem;
+  }
+  main .card {
+    max-width: 40rem;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  main .card__product-img {
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+  }
+  main .card__product-img img {
+    border-radius: 2rem 2rem 0 0;
+  }
+  main .card__product-info {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
