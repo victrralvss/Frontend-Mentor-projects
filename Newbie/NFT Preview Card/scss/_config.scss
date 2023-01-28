@@ -1,0 +1,49 @@
+//COLORS
+$primarycolor: hsl(215, 51%, 70%);
+$secondarycolor: hsl(178, 100%, 50%);
+$overlay: hsla(178, 100%, 50%, 0.6);
+$backgroundcolor:  hsl(217, 54%, 11%);
+$cardbrackground: hsl(216, 50%, 16%);
+$fontcolor:  hsl(215, 32%, 27%);
+$light: hsl(0, 0%, 100%);
+
+//FONTS
+$primary-font: 'Outfit';
+$font-weights: (
+  thin: 300,
+  regular: 400,
+  semibold: 600,
+);
+$font-size: (
+  small: 1rem,
+  regular: 1.3rem,
+  large: 1.8rem,
+);
+
+//MIXINS
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin ease-transition {
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+//FUNCTIONS
+@function size($size) {
+  @return map-get($font-size, $size)
+}
+
+@function weight($weight) {
+  @return map-get($font-weights, $weight)
+}

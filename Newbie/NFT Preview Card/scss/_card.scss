@@ -1,0 +1,141 @@
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.nft-card {
+  width: 30rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: $cardbrackground;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 1rem 0.8rem 0.3rem $backgroundcolor;
+
+
+  &__picture {
+    cursor: pointer;
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+    }
+
+    &:hover {
+      z-index: 0;
+    }
+
+    .overlay{
+      @include absolute-center;
+      @include ease-transition;
+      @include flex-center;
+
+      background-color: $overlay;
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+      opacity: 0;
+
+      img {
+        height: 4rem;
+        width: 4rem;
+      }
+
+      &:hover{
+        opacity: 1;
+      }
+
+    }
+  }
+
+
+  &__title {
+    font-size: size(large);
+    font-weight: weight(semibold);
+    color: $light;
+    cursor: pointer;
+    @include ease-transition;
+
+    &:hover {
+      color: $secondarycolor;
+    }
+  }
+
+  &__subtitle {
+    font-size: size(regular);
+    font-weight: weight(thin);
+    color: $primarycolor;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: size(regular);
+    border-bottom: 1px solid $fontcolor;
+    padding-bottom: 2rem;
+
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .value {
+      span {
+        color: $secondarycolor;
+        font-size: size(semibold)
+      }
+    }
+
+    .time {
+      span {
+        color: $primarycolor;
+        font-weight: weight(thin);
+      }
+    }
+
+  }
+
+  &__creation {
+    @include flex-center;
+    justify-content: flex-start;
+    gap: 2rem;
+
+    .creator {
+      border-radius: 50%;
+      width: 3rem;
+      height: 3rem;
+      border: 0.2rem solid $light;
+      background-image: url("../images/image-avatar.png");
+      background-size: contain;
+    }
+
+    span {
+      font-weight: weight(regular);
+      font-size: size(regular);
+      color: $primarycolor;
+
+      .creation__name {
+        font-size: size(regular);
+        color: $light;
+        @include ease-transition;
+
+        &:hover {
+          color: $secondarycolor;
+        }
+      }
+    }
+  }
+
+
+}
