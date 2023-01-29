@@ -1,0 +1,47 @@
+main {
+
+  @media screen and (max-width: 950px) {
+    .card {
+      flex-direction: column;
+      max-width: 30rem;
+      height: 70rem;
+
+      &__info {
+        order: 2;
+        width: 100%;
+        padding: 3rem;
+        justify-content: flex-start;
+        gap: 3rem;
+
+        .text {
+          text-align: center;
+
+          .title {
+            font-size: 2.5rem;
+          }
+
+        }
+
+        .stats {
+          flex-direction: column;
+          gap: 3rem;
+          align-items: center;
+
+          .stats-number {
+            text-align: center;
+          }
+        }
+
+      }
+
+      &__picture {
+        width: 100%;
+        height: 45%;
+
+        img, .overlay {
+          border-radius: 1rem 1rem 0 0;
+        }
+      }
+    }
+  }
+}
