@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution page - Frontend Mentor]
-- Live Site URL: [Stats Preview]
+- Solution URL: [Solution page - Frontend Mentor]https://www.frontendmentor.io/solutions/responsive-card-semantic-html-sass-vGtRhFdJwU
+- Live Site URL: [Stats Preview]https://stats-card-victrralvss.netlify.app
 
 ## My process
 
