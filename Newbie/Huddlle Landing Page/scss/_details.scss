@@ -1,29 +1,24 @@
 .details {
  @include flex-center;
   width: 100%;
-
   gap: 2rem;
+
 
 
   &__left {
     width: 60%;
-    height: 60rem;
+    height: auto;
     align-self: start;
-
-
-    .layout {
-
-    }
   }
 
   &__right {
     width: 40%;
-    height: 60rem;
+    height: auto;
 
     padding: 6rem 3rem 1rem 3rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 10rem;
     align-self: start;
     justify-content: space-between;
 
