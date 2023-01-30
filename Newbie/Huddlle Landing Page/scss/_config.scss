@@ -1,0 +1,38 @@
+//COLORS
+$primarycolor: hsl(257, 40%, 49%);
+$active: hsl(300, 69%, 71%);
+$textcolor: hsl(0, 0%, 100%);
+
+
+//FONTS
+$primaryfont: 'Poppins';
+$secondaryfont:  'Open Sans';
+$fontweights: (regular: 400, semibold: 600);
+
+
+//FUNCTIONS
+@function weight ($weight) {
+  @return map-get($fontweights, $weight)
+}
+
+//MIXINS
+
+@mixin button-style {
+  width: 18rem;
+  height: 5rem;
+  border-radius: 4.5rem;
+  border: none;
+  color: $primarycolor;
+  font-size: 1.5rem;
+  box-shadow: 0.3rem 0.3rem 0.5rem #424246;
+}
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

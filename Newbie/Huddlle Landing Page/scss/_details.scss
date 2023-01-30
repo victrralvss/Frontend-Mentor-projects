@@ -1,0 +1,84 @@
+.details {
+ @include flex-center;
+  width: 100%;
+
+  gap: 2rem;
+
+
+  &__left {
+    width: 60%;
+    height: 60rem;
+    align-self: start;
+
+
+    .layout {
+
+    }
+  }
+
+  &__right {
+    width: 40%;
+    height: 60rem;
+
+    padding: 6rem 3rem 1rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-self: start;
+    justify-content: space-between;
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+
+      .title {
+        font-size: 3.5rem;
+      }
+
+      .subtitle {
+        font-weight: weight(regular);
+      }
+
+      .register-button {
+        @include button-style;
+        @include transition-ease;
+
+        &:hover {
+          background-color: $active;
+          color: $textcolor;
+        }
+      }
+    }
+
+
+    .contact {
+      @include flex-center;
+
+      align-self: flex-end;
+      gap: 2rem;
+
+
+      .icon {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        border: 2px solid $textcolor;
+        @include flex-center;
+        @include transition-ease;
+
+
+        i { @include transition-ease; font-size: 2rem}
+
+        &:hover {
+            border-color: $active;
+             i {
+              color: $active;
+            }
+
+        }
+
+      }
+    }
+  }
+}

@@ -1,0 +1,12 @@
+@import "reset";
+@import "config";
+@import 'header';
+@import 'details';
+@import 'footer';
+@import 'mobile';
+
+main {
+  @include flex-center;
+
+  padding: 2rem;
+}
