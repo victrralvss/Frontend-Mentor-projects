@@ -1,0 +1,16 @@
+.header {
+  @include flex-center;
+  margin-top: 3rem;
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+
+  &__logo {
+    width: 10rem;
+    padding: 1rem;
+  }
+
+  @media screen and (max-width: 950px) {
+    &__logo{ width: 8rem; }
+  }
+}

@@ -1,0 +1,47 @@
+//COLORS
+$white: hsl(0, 0%, 100%);
+$primarycolor: hsl(223, 87%, 63%);
+$hoverbutton: hsl(224, 87%, 70%);
+$secondarycolor: hsl(228, 6%, 84%);
+$alertcolor: hsl(354, 100%, 66%);
+$textcolor: hsl(0, 0%, 59%);
+$highlightcolor: hsl(209, 33%, 12%);
+$inputborder: hsl(221, 71%, 93%);
+
+
+//FONTS
+$primaryfont: 'Libre Franklin';
+$fontweights: (light : 300 , semibold: 600, bold: 700);
+
+
+//FUNCTIONS
+@function weight($weight) {
+  @return map-get($fontweights, $weight);
+}
+
+
+//MIXINS
+
+@mixin button-style {
+  cursor: pointer;
+  color: $white;
+
+  width: 14rem;
+  height: 4rem;
+
+  border-radius: 4rem;
+  border: none;
+  background-color: $primarycolor;
+  font-size: 1.3rem;
+  font-weight: weight(light);
+}
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,39 @@
+.service {
+  @media screen and (max-width: 950px) {
+    padding: 0 2rem;
+    gap: 8rem;
+
+    .sub-form {
+      .title {
+        font-size: 2.5rem;
+        font-weight: weight(light);
+
+      }
+
+      .subtitle {
+        font-size: 1.5rem;
+        color: $highlightcolor;
+      }
+
+      .subscription {
+        flex-direction: column;
+
+        .submit-btn {
+          width: 30rem;
+        }
+      }
+
+    }
+
+    .preview {
+      margin: 0 auto;
+      padding: 2rem;
+      width: 100%;
+    }
+
+    .copyright {
+      font-size: 1.3rem;
+    }
+
+  }
+}
