@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <meta name="author" content="Victor Alves" />
+    <meta name="description" content="Ping monitor website is coming!" />
+    <meta name="keywords" content="ping, monitor, stats, frontend-mentor" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Ping coming soon page</title>
+  </head>
+  <body>
+    <header class="header">
+      <a href="#" aria-label="Visit our website">
+        <img
+          class="header__logo"
+          src="./images/logo.svg"
+          alt="Ping logo"
+          draggable="false"
+        />
+      </a>
+    </header>
+
+    <main class="service">
+      <section class="service__subscription">
+        <div class="sub-form">
+          <h1 class="title">We are launching <em>soon!</em></h1>
+          <h2 class="subtitle">Subscribe and get notified</h2>
+
+          <form target="_parent" class="subscription">
+            <div class="email-placeholder">
+              <input
+                type="email"
+                class="email"
+                name="email"
+                placeholder="Your email address"
+              />
+              <label class="status" for="email"
+                >Please provide a valid email address</label
+              >
+            </div>
+
+            <input type="submit" class="submit-btn" value="Notify Me" />
+          </form>
+        </div>
+        <!-- sub-form -->
+
+        <div class="preview">
+          <img
+            class="site-preview-img"
+            alt="Website preview"
+            src="./images/illustration-dashboard.png"
+            draggable="false"
+          />
+        </div>
+        <!-- preview -->
+      </section>
+      <!-- service__subscription -->
+
+      <footer class="company-info">
+        <div class="contact">
+          <a href="#" class="icon" ria-label="Follow us on Facebook"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="#" class="icon" ria-label="Follow us on Twitter"
+            ><i class="fa-brands fa-twitter"></i
+          ></a>
+          <a href="#" class="icon" aria-label="Follow us on Instagram"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+        </div>
+        <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+      </footer>
+    </main>
+
+    <footer class="author">
+      <p class="attribution">
+        Challenge by <a href="" target="_blank">Frontend Mentor</a>. Coded by
+        <a href="">victrralvss</a>.
+      </p>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/55ec22d35c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

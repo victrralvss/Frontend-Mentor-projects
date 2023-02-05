@@ -4,21 +4,23 @@ $primarycolor: hsl(223, 87%, 63%);
 $hoverbutton: hsl(224, 87%, 70%);
 $secondarycolor: hsl(228, 6%, 84%);
 $alertcolor: hsl(354, 100%, 66%);
+$valid: hsl(93, 75%, 55%);
 $textcolor: hsl(0, 0%, 59%);
 $highlightcolor: hsl(209, 33%, 12%);
 $inputborder: hsl(221, 71%, 93%);
 
-
 //FONTS
-$primaryfont: 'Libre Franklin';
-$fontweights: (light : 300 , semibold: 600, bold: 700);
-
+$primaryfont: "Libre Franklin";
+$fontweights: (
+  light: 300,
+  semibold: 600,
+  bold: 700,
+);
 
 //FUNCTIONS
 @function weight($weight) {
   @return map-get($fontweights, $weight);
 }
-
 
 //MIXINS
 

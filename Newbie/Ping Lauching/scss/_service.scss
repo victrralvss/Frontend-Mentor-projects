@@ -10,7 +10,6 @@
     @include flex-center;
     flex-direction: column;
     gap: 3rem;
-
   }
 }
 
@@ -45,17 +44,48 @@
     gap: 1rem;
     width: auto;
 
+    .email-placeholder {
+      position: relative;
 
-    .email {
-      width: 30rem;
-      height: 4rem;
-      border: 1px solid $secondarycolor;
-      border-radius: 4rem;
-      padding: 0 2rem ;
-      color: $highlightcolor;
+      .email {
+        @include transition-ease;
 
-      &:focus {
-        outline: 1px solid $primarycolor;
+        width: 30rem;
+        height: 4rem;
+        border: 1px solid $secondarycolor;
+        border-radius: 4rem;
+        padding: 0 2rem;
+        color: $highlightcolor;
+
+        &:focus {
+          outline: 1px solid $primarycolor;
+        }
+
+        &.invalid {
+          border: 1px solid $alertcolor;
+          outline: none;
+        }
+
+        &.valid {
+          outline: none;
+          border: 1px solid #5fad41;
+        }
+      }
+
+      .status {
+        @include transition-ease;
+
+        color: $alertcolor;
+        display: none;
+        font-size: 1.2rem;
+        font-style: italic;
+        position: absolute;
+        left: 2rem;
+        bottom: -2rem;
+
+        &.active {
+          display: block;
+        }
       }
     }
 
@@ -66,7 +96,6 @@
       &:hover {
         background-color: $hoverbutton;
       }
-
     }
   }
 }
@@ -76,7 +105,6 @@
   padding: 2rem;
 
   width: 60%;
-
 }
 
 .company-info {
@@ -97,16 +125,18 @@
       height: 4rem;
       border-radius: 50%;
 
-      i { @include transition-ease; font-size: 2rem; color: $primarycolor}
+      i {
+        @include transition-ease;
+        font-size: 2rem;
+        color: $primarycolor;
+      }
 
       &:hover {
         background-color: $primarycolor;
         i {
           color: $white;
         }
-
       }
-
     }
   }
 
