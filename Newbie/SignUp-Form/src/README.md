@@ -30,7 +30,7 @@ Users should be able to:
 ### Screenshot
 
 > Take a look! You can follow the links bellow for more details...
-> ![Site Preview](../public/design/desktop-design.jpg)
+> ![Alt text](design/desktop-design.jpg)
 
 ### Links
 
