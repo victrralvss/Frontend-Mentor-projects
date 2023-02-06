@@ -1,0 +1,104 @@
+@import "config";
+
+main {
+  width: 100%;
+  padding: 5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-card {
+  border-radius: 2rem;
+  max-width: 60rem;
+  box-shadow: 1.5rem 1rem 0.5rem $darktextcolor;
+
+  &__header {
+    border-radius: 1rem 1rem 0 0;
+    @include flex-center(column);
+    align-items: start;
+    gap: 1.5rem;
+    padding: 4rem;
+    background-color: $headerbackground;
+
+    .title {
+      color: $primarycolor;
+      font-weight: weight(bold);
+      font-size: size(title);
+    }
+
+    .subtitle {
+      color: $linkcolor;
+      font-size: size(subtitle);
+    }
+
+    .text {
+      color: $darktextcolor;
+      font-size: size(text);
+      line-height: 2rem;
+    }
+  }
+
+  &__first {
+    @include flex-center(column);
+    background-color: $primarycolor;
+
+    border-radius: 0 0 0 1rem;
+    align-items: start;
+    width: 100%;
+    gap: 0.5rem;
+
+    padding: 4rem;
+
+    .subtitle {
+      font-size: size(subtitle);
+      margin-bottom: 1rem;
+    }
+
+    .month-payment {
+      @include flex-center(row);
+      gap: 1rem;
+
+      span {
+        font-size: size(money);
+        font-weight: weight(bold);
+      }
+      .month {
+        font-weight: weight(thin);
+        color: $ligthtextcolor;
+      }
+
+      .description {
+        font-size: size(text);
+      }
+    }
+
+    .sign {
+      @include button-style;
+      margin-top: 2rem;
+
+      &:hover {
+        @include transition-ease;
+        background-color: hsl(71, 71%, 46%);
+      }
+    }
+  }
+
+  &__second {
+    border-radius: 0 0 1rem 0;
+    @include flex-center(column);
+    align-items: start;
+    width: 100%;
+    gap: 1.5rem;
+
+    background-color: $secondarycolor;
+    padding: 4rem;
+
+    .benefits {
+      li {
+        line-height: 1.6rem;
+        color: $ligthtextcolor;
+      }
+    }
+  }
+}

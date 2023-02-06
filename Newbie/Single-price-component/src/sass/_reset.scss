@@ -1,0 +1,33 @@
+@import "config";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: $primaryfont, sans-serif;
+  color: $headerbackground;
+}
+
+html {
+  font-size: 62.5%; //This allows using rem as a base of 10 number -> 1rem = 10px
+  height: 100%;
+}
+
+body {
+  max-width: 120rem;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: $ligthtextcolor;
+
+  @include flex-center(column);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}

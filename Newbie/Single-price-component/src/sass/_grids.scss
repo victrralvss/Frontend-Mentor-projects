@@ -1,0 +1,17 @@
+.price-card {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "first second";
+  &__header {
+    grid-area: header;
+  }
+
+  &__first {
+    grid-area: first;
+  }
+
+  &__second {
+    grid-area: second;
+  }
+}

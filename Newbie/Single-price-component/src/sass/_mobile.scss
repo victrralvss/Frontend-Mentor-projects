@@ -1,0 +1,22 @@
+.price-card {
+  @media screen and (max-width: 60rem) {
+    display: grid;
+    grid-template-areas:
+      "header"
+      "first"
+      "second";
+    &__header {
+      grid-area: header;
+    }
+
+    &__first {
+      border-radius: 0;
+      grid-area: first;
+    }
+
+    &__second {
+      border-radius: 0 0 1rem 1rem;
+      grid-area: second;
+    }
+  }
+}
