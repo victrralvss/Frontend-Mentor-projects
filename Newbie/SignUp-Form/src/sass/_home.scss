@@ -1,0 +1,138 @@
+main {
+  padding: 3rem;
+  max-width: 120rem;
+}
+
+.signup {
+  @include flex-center;
+  gap: 5rem;
+  max-width: 100rem;
+
+  &__description {
+    @include flex-center(column);
+    width: 50%;
+
+    gap: 2rem;
+
+    .title {
+      font-size: size(title);
+      line-height: 4.5rem;
+    }
+
+    .subtitle {
+      font-size: size(text);
+      font-weight: weight(regular);
+    }
+  }
+
+  &__form {
+    @include flex-center(column);
+    width: 50%;
+    gap: 2rem;
+
+    .offer {
+      @include box-shadow;
+      background-color: $infocolor;
+      padding: 1.5rem;
+      border-radius: 0.8rem;
+      width: 100%;
+      text-align: center;
+
+      p {
+        font-size: size(text);
+
+        br {
+          display: none;
+        }
+      }
+    }
+
+    .signup-card {
+      @include box-shadow;
+      width: 100%;
+      background-color: $textcolor;
+      padding: 3rem;
+      border-radius: 0.8rem;
+
+      .trial-form {
+        @include flex-center(column);
+        gap: 2rem;
+
+        .input-holder {
+          width: 100%;
+          position: relative;
+
+          .input-type {
+            @include input-style;
+            @include transition-ease;
+            position: relative;
+            margin-bottom: 1rem;
+
+            &::placeholder {
+              font-weight: weight(semibold);
+            }
+
+            &:focus {
+              border: 0.1rem solid $inputtextcolor;
+            }
+
+            &.alert {
+              border: 1px solid $primarycolor;
+            }
+          }
+
+          .status {
+            @include transition-ease;
+            font-weight: weight(semibold);
+            color: $primarycolor;
+            display: none;
+            padding-left: 2rem;
+
+            &.alert {
+              display: block;
+            }
+          }
+
+          .status-icon {
+            @include absolute-center;
+
+            width: 2rem;
+            height: 2rem;
+            background-image: url(../assets/icon-error.svg);
+            background-size: contain;
+            display: none;
+
+            &.alert {
+              display: block;
+            }
+          }
+        }
+
+        .claim {
+          @include button-style;
+          @include transition-ease;
+          box-shadow: 0 0.3rem 0rem $buttonshadow;
+
+          &:hover {
+            background-color: $buttonshadow;
+          }
+        }
+      }
+      .policy {
+        color: $titlecolor;
+        font-weight: weight(normal);
+        text-align: center;
+        margin-top: 1rem;
+
+        .terms {
+          color: $primarycolor;
+          font-weight: weight(bold);
+        }
+      }
+    }
+  }
+}
+
+.status-icon.password {
+  display: block;
+}

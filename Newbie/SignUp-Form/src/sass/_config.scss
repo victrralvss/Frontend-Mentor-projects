@@ -1,0 +1,90 @@
+//COLORS
+$primarycolor: hsl(0, 100%, 74%);
+$shadow: hsl(0, 63%, 63%);
+$buttoncolor: hsl(154, 59%, 51%);
+$buttonshadow: hsl(154, 82%, 36%);
+$infocolor: hsl(248, 32%, 49%);
+$textcolor: hsl(0, 0%, 100%);
+$inputtextcolor: hsl(249, 10%, 26%);
+$titlecolor: hsl(246, 25%, 77%);
+
+//FONTS
+$primaryfont: "Poppins";
+$fontweight: (
+  regular: 400,
+  normal: 500,
+  semibold: 600,
+  bold: 700,
+);
+$fontsize: (
+  text: 1.3rem,
+  money: 1.8rem,
+  title: 4rem,
+  mobiletitle: 2.6rem,
+  subtitle: 1.3rem,
+);
+
+//FUNCTIONS
+@function weight($weight) {
+  @return map-get($fontweight, $weight);
+}
+
+@function size($size) {
+  @return map-get($fontsize, $size);
+}
+
+//MIXINS
+@mixin transition-ease {
+  transition: all 0.5s ease-in;
+}
+
+@mixin flex-center($direction: row) {
+  flex-direction: $direction;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-style {
+  font-size: size(text);
+  font-weight: weight(normal);
+  background-color: $buttoncolor;
+  color: $textcolor;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  width: 100%;
+  height: 5rem;
+  border-radius: 0.4rem;
+  border: none;
+}
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin input-style {
+}
+
+@mixin box-shadow {
+  box-shadow: 0 0.8rem 0rem $shadow;
+}
+
+@mixin input-style {
+  width: 100%;
+  height: 5rem;
+  border-radius: 0.4rem;
+  padding-left: 2rem;
+  border: 1px solid $titlecolor;
+  color: $inputtextcolor;
+  font-weight: weight(normal);
+  outline: none;
+}
+
+@mixin absolute-center {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, calc(-50% - 1rem));
+}

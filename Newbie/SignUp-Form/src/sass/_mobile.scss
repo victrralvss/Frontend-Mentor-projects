@@ -1,0 +1,57 @@
+@media screen and (max-width: 920px) {
+  body {
+    background-image: url(../assets/bg-intro-mobile.png);
+    background-size: contain;
+  }
+  .signup {
+    flex-direction: column;
+
+    max-width: 60rem;
+
+    &__description {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__form {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  main {
+    padding: 1rem;
+  }
+  .signup {
+    flex-direction: column;
+
+    max-width: 60rem;
+
+    &__description {
+      width: 100%;
+      text-align: center;
+
+      .title {
+        font-size: size(mobiletitle);
+        line-height: 3.5rem;
+      }
+    }
+
+    &__form {
+      width: 100%;
+
+      .offer {
+        p {
+          br {
+            display: block;
+          }
+        }
+      }
+
+      .signup-card {
+        padding: 2rem;
+      }
+    }
+  }
+}
