@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution page - Frontend Mentor]
-- Live Site URL: [Service Card]
+- Solution URL: [Solution page - Frontend Mentor]()
+- Live Site URL: [Service Card](https://service-card-victrralvss.netlify.app)
 
 ## My process
 
