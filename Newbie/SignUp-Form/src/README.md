@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution page - Frontend Mentor]
-- Live Site URL: [Sign up - Form]
+- Solution URL: [Solution page - Frontend Mentor](https://www.frontendmentor.io/solutions/responsive-input-validation-semantic-html-sass-JUhDCuEp1V)
+- Live Site URL: [Sign up - Form](https://signup-form-victrralvss.netlify.app)
 
 ## My process
 
