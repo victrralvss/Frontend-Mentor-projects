@@ -53,8 +53,8 @@
       <picture class="bg-placeholder">
         <source media="(min-width: 950px)" srcset="./assets/bg-curvy-desktop.svg" />
         <source srcset="./assets/bg-curvy-mobile.svg" />
-        <img src="./assets/bg-curvy-desktop.svg" role="none" draggable="false">
-    </picture>
+        <img src="./assets/bg-curvy-desktop.svg" role="none presentation" draggable="false">  @include border;
+      </picture>
 
         <section class="features" id="features-section">
 
@@ -90,7 +90,7 @@
 
         <section class="about" id="about-section">
 
-          <img src="assets/illustration-stay-productive.png" draggable="false" alt="productivity" role="none" class="about__img">
+          <img src="assets/illustration-stay-productive.png" draggable="false" role="none presentation" class="about__img">
           <div class="about__description">
             <h2 class="about__description__title">Stay productive,<br> wherever you are</h2>
             <p class="about__description__text">Never let location be an issue when accessing
@@ -100,14 +100,14 @@
                 Securely share files and folders with friends, family and colleagues for
               live collaboration. No email attachments required.
             </p>
-            <a href="#" aria-label="Fyle docummentation" class="about__description__link">See how Fylo works Fylo <img class="icon" src="./assets/icon-arrow.svg" role="none"></a>
+            <a href="#" aria-label="Fyle docummentation" class="about__description__link">See how Fylo works Fylo <img class="icon" src="./assets/icon-arrow.svg" role="none presentation"></a>
           </div>
 
         </section><!--about-->
 
         <section class="reviews">
 
-          <img src="./assets/bg-quotes.png" role="none" draggable="false" class="reviews__img">
+          <img src="./assets/bg-quotes.png" role="none presentation" draggable="false" class="reviews__img">
 
           <article class="reviews__users">
             <p class="comment">Fylo has improved our team productivity by an order of magnitude. Since making
@@ -154,7 +154,7 @@
           <p class="early-access__text">It only takes a minute to sign
           up and our free starter tier is extremely generous. If you have any
           questions, our support team would be happy to help you.</p>
-          <form class="early-access__form" action="">
+          <form class="early-access__form">
 
             <div class="early-access__form__email-area">
               <input type="email" id="email" placeholder="email@example.com" class="email-input">
@@ -172,7 +172,7 @@
 
       <div class="contact__header">
         <a href="" class="contact__header__home" aria-label="menu">
-          <img draggable="false" src="./assets/logo.svg"/>
+          <img draggable="false" src="./assets/logo.svg" alt="Fylo logo"/>
         </a>
       </div><!--contact__header-->
 

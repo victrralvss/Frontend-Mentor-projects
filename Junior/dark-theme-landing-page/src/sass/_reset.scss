@@ -15,10 +15,13 @@ html {
 }
 
 body {
-  min-height: 100vh;
-  margin: 0 auto;
-  background-color: $secondarybackground;
   @include flex-center(column);
+
+  background-color: $secondarybackground;
+  padding-top: 6rem;
+  min-height: 100vh;
+  max-width: 144rem;
+  margin: 0 auto;
 }
 
 a {
@@ -33,8 +36,8 @@ img {
 main {
   @include flex-center(column);
 
-  max-width: 120rem;
   width: 100%;
+  padding: 0;
 }
 
 h1,
@@ -47,6 +50,7 @@ h3 {
 .website-content {
   @include flex-center(column);
 
+  width: 100%;
   gap: 5rem;
   background-color: $mainbackground;
   position: relative;
