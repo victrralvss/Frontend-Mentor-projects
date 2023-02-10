@@ -2,17 +2,17 @@
   @include flex-center;
 
   margin-top: 5rem;
-  max-width: 100rem;
+  max-width: 120rem;
   width: 100%;
   position: relative;
   gap: 3rem;
-  padding: 2rem;
+  padding: 0 2rem;
 
   &__img {
     width: 5rem;
     position: absolute;
     top: -3rem;
-    left: -1rem;
+    left: 0;
     z-index: 0;
   }
 
@@ -24,7 +24,7 @@
     z-index: 1;
     width: calc(100% / 3);
     background-color: $testimonialsbackground;
-    padding: 2rem;
+    padding: 3rem;
     border-radius: 0.5rem;
 
     .comment {
@@ -73,10 +73,10 @@
 
   gap: 2rem;
   border-radius: 0.5rem;
-  max-width: 70rem;
+  max-width: 90rem;
   width: 100%;
   background-color: $secondarybackground;
-  padding: 3rem 4rem;
+  padding: 4rem 8rem;
   text-align: center;
 
   &__title {
@@ -103,6 +103,7 @@
 
       .email-input {
         @include input-style;
+
         color: $mainbackground;
 
         &::placeholder {
@@ -114,7 +115,7 @@
 
           cursor: pointer;
           position: absolute;
-          bottom: -1.5rem;
+          bottom: -2rem;
           left: 2rem;
           font-size: size(small);
           font-weight: weight(thin);
@@ -130,6 +131,8 @@
     .submit-btn {
       @include button-style;
       @include transition-ease;
+
+      height: 4rem;
 
       &:hover {
         background-color: $activecolor;

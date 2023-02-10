@@ -1,6 +1,6 @@
 .features {
   width: 100%;
-  max-width: 80rem;
+  max-width: 100rem;
   display: grid;
   grid-template-areas:
     "feature-1 feature-2"
@@ -14,14 +14,14 @@
   &__details {
     @include flex-center(column);
 
-    max-width: 30rem;
+    max-width: 50rem;
     height: 30rem;
     text-align: center;
     gap: 1rem;
     padding: 0 1rem;
 
     img {
-      width: 8rem;
+      width: 10rem;
     }
 
     &__title {
@@ -29,7 +29,7 @@
     }
 
     &__text {
-      fonst-size: size(small);
+      font-size: size(small);
     }
   }
 

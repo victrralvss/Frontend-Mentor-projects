@@ -3,23 +3,24 @@
 
   width: 100%;
   gap: 4rem;
-  max-width: 55rem;
+  max-width: 70rem;
   max-height: 80rem;
   text-align: center;
   position: relative;
-  padding: 2rem;
+  padding: 4rem 2rem;
   position: relative;
   z-index: 2;
+  margin-bottom: 10rem;
 
   &__description {
     @include flex-center(column);
 
-    gap: 2rem;
+    gap: 3rem;
     padding: 0 1rem;
 
     &__title {
       font-size: size(title);
-      line-height: 4rem;
+      line-height: 5rem;
     }
 
     &__subtitle {
@@ -30,7 +31,7 @@
       @include button-style;
       @include transition-ease;
 
-      max-width: 20rem;
+      max-width: 30rem;
       width: 100%;
       padding: 0 2rem;
 
