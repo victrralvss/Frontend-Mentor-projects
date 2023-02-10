@@ -1,0 +1,169 @@
+.reviews {
+  @include flex-center;
+
+  margin-top: 5rem;
+  max-width: 100rem;
+  width: 100%;
+  position: relative;
+  gap: 3rem;
+  padding: 2rem;
+
+  &__img {
+    width: 5rem;
+    position: absolute;
+    top: -3rem;
+    left: -1rem;
+    z-index: 0;
+  }
+
+  &__users {
+    @include flex-center(column);
+
+    align-items: start;
+    gap: 2rem;
+    z-index: 1;
+    width: calc(100% / 3);
+    background-color: $testimonialsbackground;
+    padding: 2rem;
+    border-radius: 0.5rem;
+
+    .comment {
+      font-size: size(text);
+    }
+
+    .user {
+      @include flex-center;
+
+      justify-content: start;
+
+      &__picture {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+      }
+
+      &__info {
+        margin-left: 1rem;
+
+        &__name {
+          font-size: size(text);
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+//MOBILE
+@media screen and (max-width: 960px) {
+  .reviews {
+    width: auto;
+    flex-direction: column;
+
+    &__users {
+      width: 30rem;
+    }
+  }
+}
+
+// EARLY ACCESS FORM
+.early-access {
+  @include flex-center(column);
+  @include relative-half;
+
+  gap: 2rem;
+  border-radius: 0.5rem;
+  max-width: 70rem;
+  width: 100%;
+  background-color: $secondarybackground;
+  padding: 3rem 4rem;
+  text-align: center;
+
+  &__title {
+    font-size: size(title);
+    color: $white;
+  }
+
+  &__text {
+    font-size: size(text);
+  }
+
+  &__form {
+    @include flex-center;
+
+    gap: 2rem;
+    justify-content: space-between;
+    width: 100%;
+
+    &__email-area {
+      @include flex-center(column);
+
+      width: 80%;
+      position: relative;
+
+      .email-input {
+        @include input-style;
+        color: $mainbackground;
+
+        &::placeholder {
+          color: $mainbackground;
+        }
+
+        &__label {
+          @include transition-ease;
+
+          cursor: pointer;
+          position: absolute;
+          bottom: -1.5rem;
+          left: 2rem;
+          font-size: size(small);
+          font-weight: weight(thin);
+          color: $errorcolor;
+          display: none;
+
+          &.active {
+            display: block;
+          }
+        }
+      }
+    }
+    .submit-btn {
+      @include button-style;
+      @include transition-ease;
+
+      &:hover {
+        background-color: $activecolor;
+      }
+    }
+  }
+}
+
+//MOBILE
+@media screen and (max-width: 620px) {
+  .early-access {
+    &__form {
+      width: 100%;
+      flex-direction: column;
+
+      &__email-area {
+        width: 100%;
+      }
+    }
+
+    .submit-btn {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .early-access {
+    &__title {
+      font-size: size(mobiletitle);
+    }
+
+    &__title {
+      font-size: size(mobiletitle);
+    }
+  }
+}

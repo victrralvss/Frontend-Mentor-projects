@@ -1,0 +1,60 @@
+@import "config";
+
+.header {
+  @include flex-center;
+
+  justify-content: space-between;
+  width: 100%;
+  background-color: $secondarybackground;
+  padding: 2rem 4rem;
+
+  &__home {
+    height: 100%;
+  }
+
+  &__navbar {
+    .page-content {
+      @include flex-center;
+      gap: 2rem;
+
+      &__links {
+        font-size: size(details);
+        font-weight: weight(thin);
+
+        a {
+          @include transition-ease;
+          border-bottom: 1px solid transparent;
+
+          &:hover {
+            color: $white;
+            border-color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+//MOBILE
+
+@media screen and (max-width: 450px) {
+  .header {
+    &__home {
+      .logo {
+        width: 10rem;
+      }
+    }
+
+    &__navbar {
+      .page-content {
+        @include flex-center;
+        gap: 2rem;
+
+        &__links {
+          font-size: size(text);
+          font-weight: weight(thin);
+        }
+      }
+    }
+  }
+}

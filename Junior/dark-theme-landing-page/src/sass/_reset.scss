@@ -1,0 +1,66 @@
+@import "config";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: $primaryfont, sans-serif;
+  color: $textcolor;
+}
+
+html {
+  font-size: 62.5%; //This allows using rem as a base of 10 number -> 1rem = 10px
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: $secondarybackground;
+  @include flex-center(column);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  display: block;
+}
+
+main {
+  @include flex-center(column);
+
+  max-width: 120rem;
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  color: white;
+  font-family: $uxfonts;
+}
+
+.website-content {
+  @include flex-center(column);
+
+  gap: 5rem;
+  background-color: $mainbackground;
+  position: relative;
+}
+
+.bg-placeholder {
+  position: absolute;
+  width: 100%;
+  top: -40rem;
+
+  img {
+    height: 40rem;
+  }
+}
+
+@media screen and (max-width: 950px) {
+}

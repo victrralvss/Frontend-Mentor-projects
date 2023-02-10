@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Fylo landing page</title>
+  </head>
+  <body>
+
+    <main>
+
+      
+      <header class="header">
+        <a href="" class="header__home" aria-label="menu"
+          ><img class="logo" draggable="false" src="./assets/logo.svg"
+        /></a>
+        <nav class="header__navbar">
+          <ul class="page-content">
+            <li class="page-content__links"><a href="#features-section" aria-label="features">Features</a></li>
+            <li class="page-content__links"><a href="#about-section" aria-label="tearms">Terms</a></li>
+            <li class="page-content__links"><a href="#get-access-section" aria-label="sign in">Sign In</a></li>
+      </header><!--header-->
+
+      <section class="intro">
+        <img src="./assets/illustration-intro.png" alt="file storage illustration">
+
+        <div class="intro__description">
+          <h1 class="intro__description__title">All your files in one secure location, accessible anywhere.</h1>
+          <p class="intro__description__subtitle">Fylo stores all your most important files in one secure location. Access them wherever you need, share and collaborate with friends family, and co-workers.</p>
+          <a href="#" class="intro__description__start" aria-label="get started">Get Started</a>
+       
+        </div><!--intro__description-->
+
+          
+      </section><!---intro-->
+      
+    
+
+      <section class="website-content">
+
+      <picture class="bg-placeholder">
+        <source media="(min-width: 950px)" srcset="./assets/bg-curvy-desktop.svg" />
+        <source srcset="./assets/bg-curvy-mobile.svg" />
+        <img src="./assets/bg-curvy-desktop.svg" role="none" draggable="false">
+    </picture>
+
+        <section class="features" id="features-section">
+
+          <div class="features__details cross-plataform">
+            <img src="./assets/icon-access-anywhere.svg" alt="feature" draggable="false">
+            <h3 class="features__details__title">Access your files, anywhere</h3>
+            <p class="features__details__text">The ability to use a
+              smartphone, tablet, or computer to access your account means your files
+              follow you everywhere.</p>
+          </div><!--cross-plataform-->
+          <div class="features__details security">
+            <img src="./assets/icon-security.svg" alt="feature" draggable="false">
+            <h3 class="features__details__title">Security you can trust</h3>
+            <p class="features__details__text">2-factor authentication and user-controlled encryption are just a couple of the security features we
+              allow to help secure your files.</p>
+          </div><!--security-->
+          <div class="features__details collaboration">
+            <img src="./assets/icon-collaboration.svg" alt="feature" draggable="false">
+            <h3 class="features__details__title">Real-time collaboration</h3>
+            <p class="features__details__text">Securely share
+              files and folders with friends, family and colleagues for live
+              collaboration. No email attachments required.</p>
+          </div><!--collaboration-->
+          <div class="features__details any-file">
+            <img src="./assets/icon-any-file.svg" alt="feature" draggable="false">
+            <h3 class="features__details__title">Store any type of file</h3>
+            <p class="features__details__text">Whether
+              you're sharing holidays photos or work documents, Fylo has you covered
+              allowing for all file types to be securely stored and shared.</p>
+          </div><!--any-file-->
+
+        </section><!---features-->
+
+        <section class="about" id="about-section">
+
+          <img src="assets/illustration-stay-productive.png" draggable="false" alt="productivity" role="none" class="about__img">
+          <div class="about__description">
+            <h2 class="about__description__title">Stay productive,<br> wherever you are</h2>
+            <p class="about__description__text">Never let location be an issue when accessing
+              your files. Fylo has you covered for all of your file storage needs.
+            </p>
+            <p class="about__description__text">
+                Securely share files and folders with friends, family and colleagues for
+              live collaboration. No email attachments required.
+            </p>
+            <a href="#" aria-label="Fyle docummentation" class="about__description__link">See how Fylo works Fylo <img class="icon" src="./assets/icon-arrow.svg" role="none"></a>
+          </div>
+
+        </section><!--about-->
+
+        <section class="reviews">
+
+          <img src="./assets/bg-quotes.png" role="none" draggable="false" class="reviews__img">
+
+          <article class="reviews__users">
+            <p class="comment">Fylo has improved our team productivity by an order of magnitude. Since making
+      the switch our team has become a well-oiled collaboration machine.</p>
+            <div class="user">
+              <img class="user__picture" alt="profile-picture" src="./assets/profile-1.jpg">
+              <div class="user__info">
+              <p class="user__info__name">Satish Pate</p>
+              <p class="user__info__job">Founder & CEO, Huddle</p>
+            </div>
+            </div> 
+          </article><!--reviews__users-->
+
+          <article class="reviews__users">
+            <p class="comment">Fylo has improved our team productivity by an
+      order of magnitude. Since making the switch our team has become a well-oiled
+      collaboration machine.</p>
+            <div class="user">
+              <img class="user__picture" alt="profile-picture" src="./assets/profile-2.jpg">
+              <div class="user__info">
+              <p class="user__info__name">Bruce McKenzie</p>
+              <p class="user__info__job">Founder & CEO, Huddle</p>
+            </div>
+            </div>
+          </article><!--reviews__users-->
+
+          <article class="reviews__users">
+            <p class="comment"> Fylo hasimproved our team productivity by an order of magnitude. Since making the
+              switch our team has become a well-oiled collaboration machine.</p>
+            <div class="user">
+              <img class="user__picture" alt="profile-picture" src="./assets/profile-3.jpg">
+              <div class="user__info">
+              <p class="user__info__info__name">Iva Boyd</p>
+              <p class="user__info__info__job">Founder & CEO, Huddle</p>
+            </div>
+
+            </div>
+          </article><!--reviews__users-->
+
+        </section><!--reviews-->
+
+        <article class="early-access" id="get-access-section">
+          <h2 class="early-access__title">Get early access today</h2>
+          <p class="early-access__text">It only takes a minute to sign
+          up and our free starter tier is extremely generous. If you have any
+          questions, our support team would be happy to help you.</p>
+          <form class="early-access__form" action="">
+
+            <div class="early-access__form__email-area">
+              <input type="email" id="email" placeholder="email@example.com" class="email-input">
+              <label for="email" class="email-input__label"></label>
+            </div>
+            
+            <input type="button"  class="submit-btn" value="Get Started For Free">
+          </form>
+        </article><!--early-access-->
+
+      </section><!--website-content-->
+    </main>
+
+    <footer class="contact">
+
+      <div class="contact__header">
+        <a href="" class="contact__header__home" aria-label="menu">
+          <img draggable="false" src="./assets/logo.svg"/>
+        </a>
+      </div><!--contact__header-->
+
+      <div class="contact__info">
+
+      <div class="find-us">
+
+          <span class="contact-us location">
+          <img src="./assets/icon-location.svg" role='none' class="contact-icon">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
+          </span>
+
+          <span class="contact-us tel">
+            <img src="./assets/icon-phone.svg" role='none'  class="contact-icon">
+            +1-543-123-4567
+          </span>
+
+          <span class="contact-us email">
+            <img src="./assets/icon-email.svg" role='none'  class="contact-icon">
+            example@fylo.com
+          </span>
+      </div><!--find-us-->
+      
+      <div class="related-links">
+        <ul class="related-links__list">
+          <li><a href="#" aria-label="">About Us</a></li>
+          <li><a href="#" aria-label="">Jobs</a></li>
+          <li><a href="#" aria-label="">Press</a></li>
+          <li><a href="#" aria-label="">Blog</a></li>
+        </ul><!--related-links__list-->
+
+        <ul class="related-links__list">
+          <li><a href="#" aria-label="">Contact Us</a></li>
+          <li><a href="#" aria-label="">Terms</a></li>
+          <li><a href="#" aria-label="">Privacy</a></li>
+      </ul><!--related-links__list-->
+        
+      </div><!--related-links-->
+
+        <div class="social-medias">
+          <a href="#" class="icon" aria-label="Follow us on Facebook"
+            ><i class="social-icons fa-brands fa-facebook-f"></i
+          ></a>
+          <a href="#" class="icon" aria-label="Follow us on Twitter"
+            ><i class="social-icons fa-brands fa-twitter"></i
+          ></a>
+          <a href="#" class="icon" aria-label="Follow us on Instagram"
+            ><i class="social-icons fa-brands fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+
+    </footer><!--contact-->
+
+    <script src="https://kit.fontawesome.com/55ec22d35c.js"crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

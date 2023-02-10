@@ -1,0 +1,89 @@
+//FONT USED
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Raleway:wght@400;600&display=swap");
+
+//COLORS
+$primarycolor: hsl(198, 60%, 50%);
+$activecolor: hsl(176, 68%, 64%);
+$buttoncolor: hsl(193, 61%, 54%);
+$secondarybackground: hsl(217, 28%, 15%);
+$mainbackground: #181f2b;
+$footerbackground: hsl(216, 53%, 9%);
+$testimonialsbackground: hsl(219, 30%, 18%);
+$errorcolor: hsl(0, 100%, 63%);
+$textcolor: hsl(0, 0%, 75%);
+$white: hsl(0, 0%, 100%);
+
+//FONTS
+$uxfonts: "Raleway";
+$primaryfont: "Open Sans";
+$fontwieght: (
+  thin: 300,
+  regular: 400,
+  bold: 700,
+);
+$fontsize: (
+  title: 3rem,
+  mobiletitle: 2rem,
+  details: 1.5rem,
+  text: 1.3rem,
+  small: 1rem,
+);
+
+//FUNCTIONS
+@function weight($weight) {
+  @return map-get($fontwieght, $weight);
+}
+
+@function size($size) {
+  @return map-get($fontsize, $size);
+}
+
+//MIXINS
+@mixin relative-half {
+  transform: translateY(50%);
+}
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in;
+}
+
+@mixin flex-center($direction: row) {
+  flex-direction: $direction;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin button-style {
+  @include flex-center(row);
+
+  font-size: size(text);
+  font-weight: weight(bold);
+  background-color: $buttoncolor;
+  color: $white;
+  height: 4rem;
+  padding: 1rem;
+  border-radius: 30rem;
+  border: none;
+  cursor: pointer;
+}
+
+@mixin input-style {
+  @include flex-center(row);
+
+  width: 100%;
+  border: none;
+  font-weight: weight(thin);
+  height: 4rem;
+  padding: 2rem;
+  border-radius: 30rem;
+  cursor: pointer;
+}
+
+@mixin transition-ease {
+  transition: all 0.5s ease-in-out;
+}
+
+@mixin border($color: $primarycolor) {
+  border: 1px dashed $color;
+}

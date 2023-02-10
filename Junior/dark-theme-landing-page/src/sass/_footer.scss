@@ -1,0 +1,162 @@
+.attribution {
+  display: none;
+  text-align: center;
+  padding: 2rem;
+  color: $primarycolor;
+
+  a {
+    color: $primarycolor;
+  }
+}
+
+.contact {
+  width: 100%;
+  max-width: 120rem;
+  background-color: $footerbackground;
+  padding: 0 3rem 3rem 3rem;
+
+  &__header {
+    width: 100%;
+    margin-top: 15rem;
+
+    &__home {
+      height: 100%;
+
+      img {
+        width: 15rem;
+      }
+    }
+  }
+
+  &__info {
+    @include flex-center;
+
+    padding: 2rem;
+    gap: 3rem;
+    justify-content: space-between;
+    align-items: start;
+
+    .find-us {
+      display: grid;
+      grid-template-areas:
+        "location telephone"
+        "location email";
+      width: 50%;
+      gap: 2rem 8rem;
+
+      .contact-us {
+        @include flex-center;
+
+        font-size: size(text);
+        gap: 1rem;
+
+        .contact-icon {
+          width: 1.5rem;
+        }
+
+        &.location {
+          grid-area: location;
+          .contact-icon {
+            align-self: flex-start;
+          }
+        }
+
+        &.tel {
+          grid-area: telephone;
+        }
+
+        &.email {
+          grid-area: email;
+        }
+      }
+    }
+
+    .related-links {
+      @include flex-center;
+
+      width: 25%;
+      align-items: self-start;
+      justify-content: space-around;
+      gap: 2rem;
+
+      li {
+        a {
+          font-size: size(text);
+        }
+      }
+    }
+
+    .social-medias {
+      @include flex-center;
+      gap: 1.5rem;
+
+      .icon {
+        @include flex-center;
+        @include transition-ease;
+
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        border: 1px solid $white;
+
+        .social-icons {
+          @include transition-ease;
+          font-size: 2rem;
+        }
+
+        &:hover {
+          border-color: $activecolor;
+          .social-icons {
+            color: $activecolor;
+          }
+        }
+      }
+    }
+  }
+}
+
+//MOBILE
+@media screen and (max-width: 950px) {
+  .contact {
+    &__info {
+      .find-us {
+        @include flex-center(column);
+        align-items: start;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .contact {
+    &__header {
+      margin-top: 20rem;
+      &__home {
+        text-align: center;
+        img {
+          margin: 0 auto;
+          width: 10rem;
+        }
+      }
+    }
+
+    &__info {
+      flex-direction: column;
+      justify-content: center;
+      gap: 5rem;
+
+      .find-us {
+        width: 100%;
+      }
+
+      .related-links {
+        width: 100%;
+        justify-content: center;
+      }
+
+      .social-medias {
+        width: 100%;
+      }
+    }
+  }
+}

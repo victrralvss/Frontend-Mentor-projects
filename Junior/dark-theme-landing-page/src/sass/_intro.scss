@@ -1,0 +1,63 @@
+.intro {
+  @include flex-center(column);
+
+  width: 100%;
+  gap: 4rem;
+  max-width: 55rem;
+  height: 80rem;
+  text-align: center;
+  position: relative;
+  padding: 2rem;
+  position: relative;
+  z-index: 2;
+
+  &__description {
+    @include flex-center(column);
+
+    gap: 2rem;
+    padding: 0 1rem;
+
+    &__title {
+      font-size: size(title);
+      line-height: 4rem;
+    }
+
+    &__subtitle {
+      font-size: size(text);
+    }
+
+    &__start {
+      @include button-style;
+      @include transition-ease;
+
+      max-width: 20rem;
+      width: 100%;
+      pading: 0 2rem;
+
+      &:hover {
+        background-color: $activecolor;
+      }
+    }
+  }
+}
+
+//MOBILE
+
+@media screen and (max-width: 650px) {
+  .intro {
+    &__description {
+      @include flex-center(column);
+
+      gap: 2rem;
+
+      &__title {
+        font-size: size(mobiletitle);
+        line-height: 3.5rem;
+      }
+
+      &__subtitle {
+        font-size: size(text);
+      }
+    }
+  }
+}
