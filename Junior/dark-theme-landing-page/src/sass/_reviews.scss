@@ -132,8 +132,6 @@
       @include button-style;
       @include transition-ease;
 
-      height: 4rem;
-
       &:hover {
         background-color: $activecolor;
       }

@@ -18,7 +18,7 @@ body {
   @include flex-center(column);
 
   background-color: $secondarybackground;
-  padding-top: 6rem;
+  padding-top: 4rem;
   min-height: 100vh;
   max-width: 144rem;
   margin: 0 auto;

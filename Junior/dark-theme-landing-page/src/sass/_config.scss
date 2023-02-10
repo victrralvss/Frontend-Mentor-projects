@@ -57,11 +57,12 @@ $fontsize: (
 @mixin button-style {
   @include flex-center(row);
 
-  font-size: size(small);
+  max-width: 20rem;
+  font-size: size(text);
   font-weight: weight(bold);
   background-color: $buttoncolor;
   color: $white;
-  height: 4rem;
+  height: 5rem;
   padding: 0 2rem;
   border-radius: 30rem;
   border: none;
@@ -72,11 +73,13 @@ $fontsize: (
   @include flex-center(row);
 
   width: 100%;
+
   border: none;
   font-weight: weight(thin);
-  height: 4rem;
+  height: 5rem;
   padding: 2rem;
   border-radius: 30rem;
+
   cursor: pointer;
 }
 

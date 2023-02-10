@@ -1,8 +1,11 @@
 .contact {
+  @include flex-center(column);
+
+  gap: 6rem;
   width: 100%;
   max-width: 144rem;
   background-color: $footerbackground;
-  padding: 0 3rem 3rem 3rem;
+  padding: 5rem;
 
   &__header {
     width: 100%;
